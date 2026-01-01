@@ -45,6 +45,42 @@ Lombok (Productividad)
 
 instalacion 
 
+1 clonar 
+https://github.com/SaraithSanchez/ForoHub.git
 
-git clone https://github.com/tu-usuario/ChallengeForoHub.git
+2 base de datos: Configurar la Base de Datos: Crea una base de datos en MySQL llamada forohub_dby configura tus credenciales en el archivo src/main/resources/application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/forohub_db
+spring.datasource.username=root
+spring.datasource.password=
+api.security.secret=${JWT_SECRET:mi_clave_secreta_123}
+
+
+3. Ejecutar la aplicación: puede usar el comando ./mvnw spring-boot:runo ejecutarla directamente desde IntelliJ IDEA.
+
+   Para interactuar con la API, siga estos pasos:
+   
+Utilizar Postman
+Iniciar sesión: envíe un POST /logincon el JSON del usuario para recibir su token de portador.
+
+Autorización: En las siguientes solicitudes podrás acceder a Auth , seleccionar Bearer Token e ingresar el código recibido.
+
+Puntos finales:
+
+POST /topicos- Registrar un tópico.
+
+GET /topicos- Listar todos.
+
+GET /topicos/{id}- Ver detalles.
+
+PUT /topicos/{id}- Editar.
+
+DELETE /topicos/{id}- Eliminar.
+
+Autor
+Tu Nombre - Saraith Sanchez
+
+
+
+
 
