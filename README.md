@@ -53,7 +53,7 @@ https://github.com/SaraithSanchez/ForoHub.git
 spring.datasource.url=jdbc:mysql://localhost:3306/forohub_db
 spring.datasource.username=root
 spring.datasource.password=
-api.security.secret=${JWT_SECRET:mi_clave_secreta_123}
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 
 3. Ejecutar la aplicación: puede usar el comando ./mvnw spring-boot:runo ejecutarla directamente desde IntelliJ IDEA.
